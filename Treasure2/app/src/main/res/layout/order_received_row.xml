@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="5dp"
+    android:background="@drawable/outline">
+    <TextView
+        android:id="@+id/orderer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ordered by: "
+        android:textSize="23dp"
+        android:paddingLeft="10dp"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number:"
+        android:textSize="20dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="right"
+        android:paddingRight="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:text="ordered"
+            />
+
+        <TextView
+            android:id="@+id/main_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:textSize="15dp"
+            android:text=""
+            />
+    </RelativeLayout>
+
+</LinearLayout>

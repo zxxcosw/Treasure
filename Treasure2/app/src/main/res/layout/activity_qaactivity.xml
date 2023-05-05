@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_white">
+
+
+        <TextView
+            android:id="@+id/post_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text=""
+            android:singleLine="true"
+            android:textColor="@color/grey"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/Back_from_qa"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/back" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/QA_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:divider="#00000000"
+        android:dividerHeight="10dp"
+        android:layout_weight="1"
+        />
+
+    <RelativeLayout
+        android:id="@+id/post_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/post_q"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginVertical="5dp"
+            android:hint="Ask your question here."
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/outline"
+            />
+
+        <Button
+            android:id="@+id/post_ask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginRight="10dp"
+
+            android:layout_centerVertical="true"
+            android:text="Ask"
+            style="?android:attr/buttonStyleSmall"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
